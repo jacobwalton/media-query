@@ -1,0 +1,101 @@
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 90px;
+  width: 100%;
+  border-bottom: 3px solid gray;
+  background-color: #fff;
+  display: grid;
+  /* grid-template-columns: repeat(100px 3em 3em 3em); */
+  justify-content: end;
+  font-size: 20px;
+}
+
+body{
+  background-image: url(double-bubble-outline.png);
+}
+
+#nav-name{
+  background-color: rgb(97, 167, 167);
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 7em;
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  padding: 0px;
+  margin: 0px;
+  height: 90px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+.about{
+  grid-column: 2;
+  padding: 10px;
+  border-right: 1px solid gray;
+  height: 20px;
+  margin-top: 25px;
+  
+  
+  }
+  
+  .portfolio{
+    grid-column: 3;
+    padding: 10px;
+    border-right: 1px solid gray;
+    height: 20px;
+    margin-top: 25px;
+  }
+  
+  .contact{
+    grid-column: 4;
+    padding: 10px;
+  }
+
+  
+section{
+  margin-top: 180px;
+  font-size: 60px;
+}
+
+.nav-links{
+  color: gray;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+:link{
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:visited{
+  color: gray;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.navbar-brand{
+font-size: 16px;
+color: gray;
+}
+  @media screen and (min-width: 640px) {
+    body {
+
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    body {
+
+    }
+  }
+
+  @media screen and (min-width: 980px) {
+      body {
+
+      }
+    }

@@ -18,7 +18,7 @@ nav {
   display: grid;
   justify-content: end;
   font-size: 20px;
-  z-index: 1;
+  z-index: 2;
 }
 
 #nav-name{
@@ -101,6 +101,10 @@ section{
   font-size: 38px;
   margin-top: 0px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+  border-bottom: 1px solid lightgray;
+  margin: 30px 20px -30px 20px;
+  padding-bottom: 30px;
 }
 
 textarea{
@@ -148,16 +152,15 @@ img{
   padding-right: 20px;
   margin-top: 50px;
   float: left;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
+
 .about-me-p{
-  margin-top: 0px;
   font-size: 16px;
   position: relative;
   top: 40px;
   display: inline;
-
   }
 
 #about-header{
@@ -169,6 +172,73 @@ img{
   color: rgb(100, 165, 165);
 }
 
+.portfolio-container{
+  border: 2px solid lightgray;
+  height: 1000px;
+  width: 650px;
+  background-color: white;
+}
+
+.port-pics{
+  margin: 20px ;
+  padding: 0px;
+  position: relative;
+  top: 35px;
+  left: 35px;
+}
+
+.pic-captions{
+  display: flex;
+  position: absolute;
+  margin-bottom: 10px;
+  background-color:  rgb(100, 165, 165);
+  color: white;
+  width: 250px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.guess{
+position: absolute;
+bottom: 640px;
+left: 55px;
+}
+.games{
+  position: absolute;
+  bottom: 640px;
+  right: 55px;
+}
+.trivia{
+  position: absolute;
+  bottom: 350px;
+  left: 55px;
+}
+.info{
+  position: absolute;
+  bottom: 350px;
+  right: 55px;
+}
+.rps{
+  position: absolute;
+  bottom: 60px;
+  left: 55px;
+}
+
+
+#port-header{
+  color: rgb(100, 165, 165);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 28px;
+  border-bottom: 2px solid lightgray;
+  margin: 30px 20px -30px 20px;
+  padding-bottom: 30px;
+
+}
+
 footer{
 width: 100%;
 height: 70px;
@@ -176,7 +246,7 @@ background-color: gray;
 border-top: 7px solid rgb(100, 165, 165);
 position: absolute;
 color: white;
-bottom: -50px;
+bottom: -2000px;
 left: 0px;
 display: flex;
 align-items:center;
@@ -184,8 +254,6 @@ justify-content: center;
 }
 
 @media screen and (max-width: 980px) {
-
-}
 
 @media screen and (max-width: 768px) {
     section {
@@ -200,13 +268,14 @@ justify-content: center;
       width: 85%;
   }
   
-  img{
-    margin-bottom: -30px;
-    width: 220px;
-    height: 200px;
-    display: flex;
-    align-items: flex-start;
+    img{
+      margin-bottom: -30px;
+      width: 220px;
+      height: 200px;
+      display: flex;
+      align-items: flex-start;
   }
+
   }
 
 @media screen and (max-width: 640px) {
@@ -228,7 +297,7 @@ justify-content: center;
       background-color: white;
       position: absolute;
       top: 55px;
-      z-index: 1;
+      z-index: 2;
   }
   .about{
     padding: 10px;
@@ -294,5 +363,54 @@ justify-content: center;
       color: rgb(100, 165, 165);
     }
 
+    .portfolio-container{
+      border: 2px solid lightgray;
+      height: 2350px;
+      width: 560px;
+      background-color: white;
+    }
+    
+    
+    .port-pics{
+      margin-left: 80px ;
+      margin-right: 80px ;
+      padding: 0px;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      left: 0px;
+    }
+      .pic-captions{
+        margin-bottom: 20px;
+        width: 400px;
+      }
 
+      .guess{
+        position: absolute;
+        bottom: 1820px;
+        left: 80px;
+      }
+      .games{
+        position: absolute;
+        bottom: 1380px;
+        left: 80px;
+      }
+      .trivia{
+        position: absolute;
+        bottom: 940px;
+        left: 80px;
+      }
+      .info{
+        position: absolute;
+        bottom: 500px;
+        left: 80px;
+      }
+      .rps{
+        position: absolute;
+        bottom: 60px;
+        left: 80px;
+      }
+      
+
+}
 }
